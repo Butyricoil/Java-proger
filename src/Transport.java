@@ -1,9 +1,15 @@
+
+
 public class Transport {
 
     private float speed;
     private int weight;
     private String color;
     private byte[] coordinates;
+
+    public Transport(){
+
+    }
 
 
     public Transport(float speed, int weight, String color, byte[] coordinates){

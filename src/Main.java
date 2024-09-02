@@ -14,12 +14,8 @@ public class Main {
 //        numbers.add(1.2f);
 //        System.out.println(numbers);
 
-
-
-        Transport bmw = new Transport(250.0f, 1500, "red", new byte[] {0, 0, 0});
-        Transport truck = new Transport(2500, new byte[] {100, 0, 100});
-        bmw.getValues();
-
+        Car car = new Car(250.0f, 1200, "white",new byte[] {0, 0, 0});
+        Truck ram =new Truck(150.0f, 2500, "red", new byte[] {100, 0 ,100});
 
     }
 }
