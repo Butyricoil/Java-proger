@@ -1,5 +1,6 @@
 public class Transport {
     private String color;
-    private String type;
+    private float speed;
+    private int weight;
 
 }
