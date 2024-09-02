@@ -14,11 +14,9 @@ public class Main {
 //        numbers.add(1.2f);
 //        System.out.println(numbers);
 
-        Car car = new Car(250.0f, 1200, "white",new byte[] {0, 0, 0});
-        Truck ram =new Truck(2500, new byte[] {100, 0 ,100});
+       // Car car = new Car(250.0f, 1200, "white",new byte[] {0, 0, 0});
+       Truck ram =new Truck(2500, new byte[] {100, 0 ,100});
 
-        ram.setLoaded(true);
-        ram.getLoaded();
-
+        ram.setValues(250.0f, 1200, "white",new byte[] {0, 0, 0});
     }
 }
