@@ -19,7 +19,7 @@ public class Transport {
         this.weight = weight;
         this.color = color;
         this.coordinates = coordinates;
-        System.out.println(getValues());
+//        System.out.println(getValues());
 
     }
 
@@ -27,9 +27,8 @@ public class Transport {
         System.out.println("object created");
         this.weight = weight;
         this.coordinates = coordinates;
-        System.out.println(getValues());
+//        System.out.println(getValues());
     }
-
 
     public void setValues(float speed, int weight, String color, byte[] coordinates){
         this.speed = speed;
@@ -43,7 +42,12 @@ public class Transport {
     public String getValues(){
 
         String info = ("Speed: " + speed + " Weight: " + weight + " Color: " + color + " Coordinates: " + coordinates);
+        String infoCoordinates = ("Coordinates:\n");
 
-        return info;
+        for(int i = 0; i < coordinates.length; i++){
+            infoCoordinates += coordinates[i] + "\n";
+        }
+
+        return info + infoCoordinates;
     }
 }
