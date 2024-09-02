@@ -19,5 +19,7 @@ public class Main {
        ram.setValues(250.0f, 1200, "white", new byte[] {100, 0, 100},true);
        ram.getValues();
 
+       System.out.println("hello git?");
+
     }
 }
