@@ -15,7 +15,10 @@ public class Main {
 //        System.out.println(numbers);
 
         Car car = new Car(250.0f, 1200, "white",new byte[] {0, 0, 0});
-        Truck ram =new Truck(150.0f, 2500, "red", new byte[] {100, 0 ,100});
+        Truck ram =new Truck(2500, new byte[] {100, 0 ,100});
+
+        ram.setLoaded(true);
+        ram.getLoaded();
 
     }
 }
