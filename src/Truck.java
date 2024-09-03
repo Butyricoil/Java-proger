@@ -1,3 +1,5 @@
+
+
 public class Truck extends Transport {
 
     // Поле, указывающее загружен ли грузовик
@@ -25,6 +27,11 @@ public class Truck extends Transport {
         super.setValues(speed, weight, color, coordinate);
         System.out.println("overrited From truck class");
     }
+
+    @Override
+    public void moveObjec(float speed) {
+        System.out.println("truck is moving on this speed:" + speed);
+    };
 
     // Перегруженный метод setValues с дополнительным параметром isLoaded
     public void setValues(float speed, int weight, String color, byte[] coordinate, boolean isLoaded) {
