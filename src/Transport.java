@@ -3,7 +3,7 @@
 public abstract class Transport {
 
     // Поля для хранения скорости, веса, цвета и координат
-    private float speed;
+    protected float speed;
     private int weight;
     private String color;
     private byte[] coordinates;
@@ -20,11 +20,12 @@ public abstract class Transport {
         this.weight = weight;
         this.color = color;
         this.coordinates = coordinates;
-//        System.out.println(getValues()); // Комментарий убран для предотвращения вывода значений при создании объекта
+//      System.out.println(getValues()); // Комментарий убран для предотвращения вывода значений при создании объекта
     }
 
     //обстрактный метод
     public abstract void moveObjec(float speed);
+    public abstract boolean stopObject();
 
     // Конструктор с параметрами веса и координат
     public Transport(int weight, byte[] coordinates) {

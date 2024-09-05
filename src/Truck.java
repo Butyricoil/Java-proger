@@ -31,7 +31,16 @@ public class Truck extends Transport {
     @Override
     public void moveObjec(float speed) {
         System.out.println("truck is moving on this speed:" + speed);
-    };
+    }
+
+    @Override
+    public boolean stopObject() {
+        this.speed = 0;
+        return true;
+    }
+
+    ;
+
 
     // Перегруженный метод setValues с дополнительным параметром isLoaded
     public void setValues(float speed, int weight, String color, byte[] coordinate, boolean isLoaded) {
