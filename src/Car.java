@@ -1,8 +1,14 @@
 
 
-public class Car extends Transport {
+public class Car extends Transport implements Ilights {
     // создание класса вложеного обьектаа
     public Engine engine = new Engine();
+
+    private boolean isOn = false;
+
+    //конструктор по умолчанию
+    public Car () { }
+
     // Конструктор класса Car, который вызывает конструктор родительского класса Transport
     public Car(float speed, int weight, String color, byte[] coordinates) {
         super(speed, weight, color, coordinates); // Вызов конструктора суперкласса Transport с соответствующими параметрами
@@ -20,7 +26,17 @@ public class Car extends Transport {
         return true;
     }
 
-    ;
+    @Override
+    public void setLight(boolean set) {
+        this.isOn = set;
+    }
 
+    @Override
+    public void blinkLight() {
+        System.out.println("We just blinked with lights");
+    }
 
+    public boolean isOn() {
+        return isOn;
+    }
 }

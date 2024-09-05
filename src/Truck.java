@@ -8,9 +8,7 @@ public class Truck extends Transport {
     private boolean isLoaded;
 
     // Конструктор по умолчанию
-    public Truck() {
-
-    }
+    public Truck() {}
 
     // Конструктор с параметрами скорости, веса, цвета и координат
     public Truck(float speed, int weight, String color, byte[] coordinate) {

@@ -20,13 +20,12 @@ public class Main {
 //
 //        // Установка новых значений для объекта Truck, включая статус загрузки
         ram.setValues(250.0f, 1200, "white", new byte[] {100, 0, 100}, true);
-//
-//        // Получение и вывод значений объекта Truck
-        ram.getValues();
-        bmw.engine.setValues(true, 6000);
-        bmw.engine.info();
-        ram.engine.setValues(false, 670000);
-//        ram.engine.info();
-        flyCar.moveObjec(450);
+
+        bmw.setLight(true);
+        bmw.blinkLight();
+
+
+
+
     }
 }
