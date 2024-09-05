@@ -65,12 +65,17 @@ public abstract class Transport {
 
         private boolean isReady;
         private int km;
-
-        public Engine (boolean isReady, int km) {
+        //доступ к ис реди
+        public void isReady(boolean isReady){
+            this.isReady = isReady;
+        }
+        //установка значчений
+        public void setValues (boolean isReady, int km) {
             this.isReady = isReady;
             this.km = km;
         }
 
+        //вывод инфы
         public void info() {
 
             if (isReady) {

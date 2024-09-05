@@ -2,7 +2,7 @@
 
 public class Truck extends Transport {
     // создание класса вложеного обьектаа
-    public Engine engine = new Engine(false, 100000);
+    public Engine engine = new Engine();
 
     // Поле, указывающее загружен ли грузовик
     private boolean isLoaded;
