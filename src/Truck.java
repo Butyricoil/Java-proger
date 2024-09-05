@@ -1,6 +1,8 @@
 
 
 public class Truck extends Transport {
+    // создание класса вложеного обьектаа
+    public Engine engine = new Engine(false, 100000);
 
     // Поле, указывающее загружен ли грузовик
     private boolean isLoaded;
@@ -25,7 +27,6 @@ public class Truck extends Transport {
     @Override
     public void setValues(float speed, int weight, String color, byte[] coordinate) {
         super.setValues(speed, weight, color, coordinate);
-        System.out.println("overrited From truck class");
     }
 
     @Override
@@ -46,7 +47,6 @@ public class Truck extends Transport {
     public void setValues(float speed, int weight, String color, byte[] coordinate, boolean isLoaded) {
         super.setValues(speed, weight, color, coordinate);
         this.isLoaded = isLoaded;
-        System.out.println("Simple From truck class");
     }
 
     // Метод для установки значения поля isLoaded

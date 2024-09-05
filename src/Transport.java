@@ -15,7 +15,6 @@ public abstract class Transport {
 
     // Конструктор с параметрами скорости, веса, цвета и координат
     public Transport(float speed, int weight, String color, byte[] coordinates) {
-        System.out.println("object created");
         this.speed = speed;
         this.weight = weight;
         this.color = color;
@@ -29,7 +28,6 @@ public abstract class Transport {
 
     // Конструктор с параметрами веса и координат
     public Transport(int weight, byte[] coordinates) {
-        System.out.println("object created");
         this.weight = weight;
         this.coordinates = coordinates;
 //        System.out.println(getValues()); // Комментарий убран для предотвращения вывода значений при создании объекта
@@ -59,5 +57,29 @@ public abstract class Transport {
 
         // Возвращение полной строки с информацией
         return info + infoCoordinates;
+
+    }
+
+    //вложеный клас
+    class Engine {
+
+        private boolean isReady;
+        private int km;
+
+        public Engine (boolean isReady, int km) {
+            this.isReady = isReady;
+            this.km = km;
+        }
+
+        public void info() {
+
+            if (isReady) {
+                System.out.println("Engine is Fine");
+            }
+            else {
+                System.out.println("Engine is broken" + km);
+            }
+        }
+
     }
 }
