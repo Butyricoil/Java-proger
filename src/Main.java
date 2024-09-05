@@ -1,10 +1,7 @@
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
+import DataBase.DB;
 
 public class Main {
     public static void main(String[] args) {
-
 //         Создание объекта класса Car с использованием конструктора
         Car bmw = new Car(250.0f, 1200, "white", new byte[] {0, 0, 0});
 //        анонимный класc
@@ -22,11 +19,10 @@ public class Main {
         Truck ram = new Truck(250.0f, 1200, "white", new byte[] {0, 0, 0});
 //
 //        // Установка новых значений для объекта Truck, включая статус загрузки
-        ram.setValues(250.0f, 1200, "white", new byte[] {g100, 0, 100}, true);
+        ram.setValues(250.0f, 1200, "white", new byte[] {100, 0, 100}, true);
 //
 //        // Получение и вывод значений объекта Truck
         ram.getValues();
-
         bmw.engine.setValues(true, 6000);
         bmw.engine.info();
         ram.engine.setValues(false, 670000);
